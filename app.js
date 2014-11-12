@@ -3,16 +3,16 @@ var app=angular.module('plunker', [
     'ngRoute'
 ]).config(['$routeProvider', '$locationProvider',
   function($routeProvider, $locationProvider) {
-    $routeProvider.when('/tab1', {
-      templateUrl: 'tab1.html',
+    $routeProvider.when('/tabs/tab1', {
+      templateUrl: 'tabs/tab1.html',
       controller: 'MainCtrl'
     })
-      .when('/tab2', {
-        templateUrl: 'tab2.html',
+      .when('/tabs/tab2', {
+        templateUrl: 'tabs/tab2.html',
         controller: 'MainCtrl'
       })
       .otherwise({
-        redirectTo: '/tab1'
+        redirectTo: '/tabs/tab1'
       });
       
       $locationProvider.html5Mode(true);
