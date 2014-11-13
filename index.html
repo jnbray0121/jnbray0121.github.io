@@ -7,10 +7,9 @@
 		<script>
 			document.write('<base href="' + document.location + '" />');
 		</script>
-		<link href="style.css" rel="stylesheet">
-		<script src="http://code.angularjs.org/1.2.7/angular.js"></script>
-		<script src="http://code.angularjs.org/1.2.7/angular-route.js"></script>
-		<script src="app.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/style.css">
+
 	</head>
 
 	<body ng-app="plunker">
@@ -23,5 +22,10 @@
 			<pre>{{ path }}</pre>
 		</div>
 		<div ng-view></div>
+
+
+		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
+		<script src="js/app.js"></script>
 	</body>
 </html>
